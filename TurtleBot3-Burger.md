@@ -5,3 +5,5 @@ First implementation of LIDAR 8/02/23
 First autonomus drive 8/03/23
 Added camera 8/06/23
 Discovered ROS Kinetic had more capability with TB3-B so switched to UBUNTU 16.04 and ROS Kinetic 8/10/23
+Started using Machine Learning in Gazebo for Obstical Detection and Avoidance 8/14/23
+
