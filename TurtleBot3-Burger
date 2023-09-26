@@ -1,0 +1,7 @@
+# TurtleBot3 Burger Progress
+Recieved bot on 7/26/23
+Inital setup with UBUNTU 20.04 and ROS Noetic 7/27 - 7/29/23
+First implementation of LIDAR 8/02/23
+First autonomus drive 8/03/23
+Added camera 8/06/23
+Discovered ROS Kinetic had more capability with TB3-B so switched to UBUNTU 16.04 and ROS Kinetic 8/10/23
