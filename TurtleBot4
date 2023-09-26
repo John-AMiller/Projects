@@ -1,0 +1,6 @@
+Recieved TurtleBot4 9/05/23
+Initial setup 9/06 - 9/08/23
+Learned ROS2, RVIS2, and an updated version of Gazebo.
+First use of RPLIDAR-A and OAKD-Pro Camera 9/12/23
+First autonomous drive 9/12/23
+Implemented ROS2 to ROS1 bridge to run TurtleBot4 and TurtleBot3-Burger simultaniously 9/20/23
