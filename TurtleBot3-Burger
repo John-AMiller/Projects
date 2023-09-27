@@ -1,9 +1,9 @@
-# TurtleBot3 Burger Progress
-Recieved bot on 7/26/23
-Inital setup with UBUNTU 20.04 and ROS Noetic 7/27 - 7/29/23
-First implementation of LIDAR 8/02/23
-First autonomus drive 8/03/23
-Added camera 8/06/23
-Discovered ROS Kinetic had more capability with TB3-B so switched to UBUNTU 16.04 and ROS Kinetic 8/10/23
-Started using Machine Learning in Gazebo for Obstical Detection and Avoidance 8/14/23
-
+TurtleBot3-Burger Progress
+Since we got the TB3-B:
+Got ROS Noetic running on TB3-B before realizing that ROS Kinetic offers more support for it. 
+Switched to ROS Kinetic. Also put Ubunutu 16.04 onto an external SSD in order to have a mobile ROS platform. So far it has worked well.
+Have started Lidar, Camera(OpenCV), and Autonomous Mapping.
+Got TurtleBot4 and wanted to use both together, however TB3-B uses ROS1 Kinetic and TB4 uses ROS2 Humble. To fix this implemented a ROS1-ROS2 bridge. 
+There were significant issues at first, most noteably was time. Since TB3-B and TB4 were not time synced, they could not operate autonomously together.
+To fix this I set the TB3-B's ntp(Network Time Protocal) as the TB4's RPI4. So whatever time the TB4 is using is automatically the time that the TB3-B is using.
+After this was fixed the robots were able to use syncronous SLAM but the RPLIDAR's were not working together. After troubleshooting I discovered that both of the Lidars were set as the primary. After setting the TB3-B's Lidar as the secondary, (because TB4 has a newer RPLIDAR), they synced and worked properly.
