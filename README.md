@@ -13,4 +13,7 @@ SphereWalker is a hexapod walker that uses a four-bar linkage system to minamize
 # Astro (Unitree GO-2 EDU)
 Astro, as he is affectionatley known in the lab, is a Unitree GO-2 EDU robotic dog. Since Astro comes with ROS2 Foxy on-board, I was able to comunicate with 
 
+# ROS2 Bash Script for File Creation
+https://github.com/John-AMiller/Generic-ROS2-file-creator-using-bash-script
+
 
