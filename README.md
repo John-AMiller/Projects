@@ -11,7 +11,7 @@ TurtleBot3-Burger and TurtleBot4 are open-source robots developed and manufactur
 SphereWalker is a hexapod walker that uses a four-bar linkage system to minamize the number of actuators needed to operate. Along with other members of ROCKIN, we are devolping a prototype of SphereWalker for NASA. I am currently trying to implement ROS2(Humble) on the SphereWalker.
 
 # Astro (Unitree GO-2 EDU)
-Astro, as he is affectionatley known in the lab, is a Unitree GO-2 EDU robotic dog. Since Astro comes with ROS2 Foxy on-board, I was able to comunicate with 
+Astro, as he is affectionatley known in the lab, is a Unitree GO-2 EDU robotic dog. Since Astro comes with ROS2 Foxy on-board, I was able to comunicate with the two Turtlebot4's. Although cross distro communication is not great in ROS2, it is good enough to create a bridge that allows Astro and the Turtlebot4's to give lidar data to a central map. This map allows for the three robots to localize and autonomously navigate the first floor of the Mechanical Engineering building at SD Mines.
 
 # ROS2 Bash Script for File Creation
 https://github.com/John-AMiller/Generic-ROS2-file-creator-using-bash-script
