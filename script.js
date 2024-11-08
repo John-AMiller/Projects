@@ -105,7 +105,7 @@ function typeText(text) {
             const char = text.charAt(index);
             commandOutput.innerText += char;
             index++;
-            typingTimeout = setTimeout(typeCharacter, 30); // Call typeCharacter again for the next character
+            typingTimeout = setTimeout(typeCharacter, 15); // Call typeCharacter again for the next character
         }
     }
 
