@@ -7,7 +7,7 @@ const landmarkText = {
     project1: "I first became involved with robotics when I started my high school's first FIRST Robotics Team. During this time, I learned how to code robots in C/C++, design robots with Autodesk Inventor and SolidWorks, and assemble robots with a team.",
     project2: "This experience drove me to pursue a degree in engineering, ultimately deciding to go to the South Dakota School of Mines and Technology. Here I joined the ROCKIN (Robotics and Computational Kinematics Innovation Lab) where I have been working for the past three years.",
     project3: "My first project in the ROCKIN Lab was to learn the operation of the Yaskawa Motoman GP12. Once I learned basic programming of jobs, I moved to control with Siemens PLCs. I learned ladder programming and how to interface the PLCs with the Motoman. My first demo had the robot cap bottles on a conveyor belt and since then I have moved to multi-robot fleets involving the Motoman, Turtlebot4s, and a Unitree Go2 robotic dog.",
-    turtlebot: "Landmark 4: Experience with Turtlebot4 in multi-robot fleet systems.",
+    turtlebot: "I started learning ROS in January of 2022, first learning Gazebo because the lab did not have any physical robots running on ROS. I completed numerous simulations with Turtlebot3's, before finally convincing the head of the lab to get two Turtlebot4's.",
     unitree: "Landmark 5: Experience with Unitree Go2 for navigation and obstacle avoidance."
 };
 
