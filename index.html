@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Robot Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Explore My Projects and Experience</h1>
+    <p>Use arrow keys to drive the robot to different locations!</p>
+    <div id="game-container">
+        <div id="robot" class="robot"></div>
+        <!-- Project locations with labels as points of interest -->
+        <div class="location" id="project1" style="top: 100px; left: 200px;">
+            <span class="label">1</span>
+        </div>
+        <div class="location" id="project2" style="top: 200px; left: 400px;">
+            <span class="label">2</span>
+        </div>
+        <div class="location" id="project3" style="top: 300px; left: 150px;">
+            <span class="label">3</span>
+        </div>
+        <div class="location" id="turtlebot" style="top: 350px; left: 500px;">
+            <span class="label">4</span>
+        </div>
+        <div class="location" id="unitree" style="top: 450px; left: 300px;">
+            <span class="label">5</span>
+        </div>        
+    </div>
+    <div id="info-box"></div>
+    
+    <!-- Terminal Container (No Run Button) -->
+    <div id="terminal-container">
+        <div id="terminal-content">
+            <p><span class="prompt">user@terminal:</span><span class="tilde">~$</span> Type the command to start:</p>
+            <div class="input-line">
+                <span class="prompt">user@terminal:</span><span class="tilde">~$</span> 
+                <input type="text" id="terminal-input" placeholder="ros2 run teleop_twist_keyboard" autofocus>
+            </div>
+            <p id="command-output"></p> <!-- Output text for landmarks will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
