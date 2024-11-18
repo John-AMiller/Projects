@@ -48,7 +48,7 @@ p {
     position: absolute;
     width: 30px;  /* Reduced size */
     height: 30px; /* Reduced size */
-    background-color: yellow;
+    background-color: blue;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
