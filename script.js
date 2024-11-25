@@ -5,10 +5,10 @@ const commandOutput = document.getElementById('command-output');
 // Define the text for each landmark
 const landmarkText = {
     project1: "I first became involved with robotics when I started my high school's first FIRST Robotics Team. During this time, I learned how to code robots in C/C++, design robots with Autodesk Inventor and SolidWorks, and assemble robots with a team.",
-    project2: "This experience drove me to pursue a degree in engineering, ultimately making the decision to go to the South Dakota School of Mines and Technology. Here I joined the ROCKIN (Robotics and Computational Kinematics Innovation Lab) where I have been working for the past three years.",
+    project2: "This experience drove me to pursue a degree in engineering, ultimately deciding to go to the South Dakota School of Mines and Technology. Here I joined the ROCKIN (Robotics and Computational Kinematics Innovation Lab) where I have been working for the past three years.",
     project3: "My first project in the ROCKIN Lab was to learn the operation of the Yaskawa Motoman GP12. Once I learned basic programming of jobs, I moved to control with Siemens PLCs. I learned ladder programming and how to interface the PLCs with the Motoman. My first demo had the robot cap bottles on a conveyor belt and since then I have moved to multi-robot fleets involving the Motoman, Turtlebot4s, and a Unitree Go2 robotic dog.",
-    turtlebot: "I started learning ROS in January of 2022, first learning Gazebo Simulation because the lab did not have any physical robots that were running or could run ROS. I completed numerous simulations with Turtlebot3's, before finally convincing the head of the lab to get two Turtlebot4's. Once we had physical robots I started working on a mail delivery system for the mechanical engineering department. I attatched a robotic servo arm to one of the turtlebots, and a basket to carry mail to the other. As of May 2024, the two Turtlebot4's work together to deliver mail around the ME department.",
-    unitree: "Working with the Unitree GO2 robotic dog gave me experience with ROS2 Humble, using LiDAR scanners for obstacle avoidance and localization, using cameras and ArUco tags for localization and initializing behavior trees, and using C/C++ for programming robotic arms. I have created numerous autonomous navigation nodes for the robotic dog, having it follow the Turtlebot4's on their delivery routes, while also opening its own doors, using its' attatched robotic arm to press the automatic door open button."
+    turtlebot: "The turtlebot4 is a ROS2-based robot that is mainly used for research and development. I have used the turtlebot4 mainly for its autonomous navigation capabilities and when the lab receieved a second Turtlebot4, I began researching multi-robot fleets. With both Turtlebot4's working in tandem, I created a mail delivery service for the mechanical engineering department; which utlizes a robotic servo arm attatched to the top plate of one of the Turtlebot4's.",
+    unitree: "Landmark 5: Experience with Unitree Go2 for navigation and obstacle avoidance."
 };
 
 let robotPosition = { x: 50, y: 50 };
@@ -105,7 +105,7 @@ function typeText(text) {
             const char = text.charAt(index);
             commandOutput.innerText += char;
             index++;
-            typingTimeout = setTimeout(typeCharacter, 15); // Call typeCharacter again for the next character
+            typingTimeout = setTimeout(typeCharacter, 30); // Call typeCharacter again for the next character
         }
     }
 
@@ -113,7 +113,7 @@ function typeText(text) {
     typeCharacter(); // Start typing the first character
 }
 
-// Check if robot is at a location and show output in terminal with typing effect
+// Check if robot is at a location and start typing
 function checkLocation() {
     let landmarkDetected = false;
 
