@@ -8,7 +8,7 @@ const landmarkText = {
     project2: "This experience drove me to pursue a degree in engineering, ultimately deciding to go to the South Dakota School of Mines and Technology. Here I joined the ROCKIN (Robotics and Computational Kinematics Innovation Lab) where I have been working for the past three years.",
     project3: "My first project in the ROCKIN Lab was to learn the operation of the Yaskawa Motoman GP12. Once I learned basic programming of jobs, I moved to control with Siemens PLCs. I learned ladder programming and how to interface the PLCs with the Motoman. My first demo had the robot cap bottles on a conveyor belt and since then I have moved to multi-robot fleets involving the Motoman, Turtlebot4s, and a Unitree Go2 robotic dog.",
     turtlebot: "The turtlebot4 is a ROS2-based robot that is mainly used for research and development. I have used the turtlebot4 mainly for its autonomous navigation capabilities and when the lab receieved a second Turtlebot4, I began researching multi-robot fleets. With both Turtlebot4's working in tandem, I created a mail delivery service for the mechanical engineering department; which utlizes a robotic servo arm attatched to the top plate of one of the Turtlebot4's.",
-    unitree: "Landmark 5: Experience with Unitree Go2 for navigation and obstacle avoidance."
+    unitree: "The navigation systems I have used for the multi-robot fleet include LiDAR, RGB cameras, and depth cameras. I use the LiDAR scanners for obstacle avoidance and area mapping; and the cameras for localization, utlizing ArUco tags for poze estimation. The combination of cameras and LiDAR scanners ensures effective mapping, localization, and obstacle avoidance. "
 };
 
 let robotPosition = { x: 50, y: 50 };
